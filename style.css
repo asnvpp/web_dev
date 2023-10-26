@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background-image: url('https://www.lonelyspeck.com/wp-content/uploads/2015/03/trona-pinnacles-milky-way.jpg'); 
+    background-size: cover;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 70px;
+}
+.main_nav{
+    display: none;   
+}
+.logo{
+    color: green;
+    margin-left: 24px
+}
+#bars{
+    color: white;
+    font-size: 24px;
+    margin-right: 24px;
+
+}
+.info ul{
+    justify-content: center;
+    align-items: center;
+    margin-top: 124px;    
+}
+.info{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 24px;
+
+}
+.menudrop{
+    position: absolute;
+    display: inline-block;
+}
+.show{
+    display: block;
+    color: white;
+    margin-left: -135px;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 65px 5px;
+    z-index: 1;
+}
+
+.dropdown li a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+.dropdown ul li{
+    margin-top: 5px;
+    list-style-type: none;
+}
+.dropdown{
+    color: white;
+    display:none;
+    margin-right: 50px; 
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 15px 16px;
+    z-index: 1;
+}
+/* .drop_down:hover .dropdown{
+    display: block;
+} */
+#bars:hover {
+    cursor: pointer;
+    transform:rotate(90)
+}
+@media(min-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .main_nav{
+        display: flex;
+        margin-right: 20px;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: white;
+        align-items: center;
+        list-style-type: none;  
+        text-decoration: none;
+        gap: 10px;
+    }
+    li a{
+        color:white;
+        text-decoration: none;
+        font-size: larger;
+        
+    }
+    ul{
+        list-style-type: none;
+        margin-left: 20px;
+    }
+    #bars{
+        display: none;
+    }
+    .logo{
+        margin-right: 1050px;
+    }  
+    .show{
+        display: none;
+    }
+}
