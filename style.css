@@ -16,12 +16,11 @@ nav{
     align-items: center;
     flex-direction: row-reverse;
     height: 70px;
+
 }
-.main_nav{
-    display: none;   
-}
+
 .logo{
-    color: green;
+    color: white;
     margin-left: 24px
 }
 #bars{
@@ -42,48 +41,77 @@ nav{
     font-size: 24px;
 
 }
-.menudrop{
-    position: absolute;
-    display: inline-block;
-}
-.show{
-    display: block;
+/*.show{*/
+/*    display: block;*/
+/*    color: white;*/
+/*    margin-left: -135px;*/
+/*    position: absolute;*/
+/*    background-color: #333;*/
+/*    min-width: 160px;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*    padding: 65px 5px;*/
+/*    z-index: 1;*/
+/*!*}*!*/
+/*.show {display: block;}*/
+.dropdown-content{
+    display: none;
     color: white;
     margin-left: -135px;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 65px 5px;
+    padding: 10px 5px;
+    border-radius: 5px;
     z-index: 1;
 }
+.dropdown-content a {
 
-.dropdown li a{
     color: white;
-    font-size: large;
-    text-decoration: none;
-}
-.dropdown ul li{
+    background-color: #222222;
     margin-top: 5px;
+    border-radius: 5px;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: none;
+}
+.dropdown-content ul{
     list-style-type: none;
+
 }
-.dropdown{
-    color: white;
-    display:none;
-    margin-right: 50px; 
-    position: absolute;
-    background-color: #222;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 15px 16px;
-    z-index: 1;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
+/*.dropdown{*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*}*/
 /* .drop_down:hover .dropdown{
     display: block;
 } */
+
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+.show {
+    display: block;
+}
 #bars:hover {
+    color: white;
     cursor: pointer;
-    transform:rotate(90)
+    transform:rotate(90deg)
 }
 @media(min-width: 768px) {
     nav{

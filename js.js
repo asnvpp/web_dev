@@ -1,14 +1,20 @@
 const bars = document.getElementById("bars");
-const dropdown = document.getElementById("dropmenu");
+const dropdown = document.getElementById("dropdown");
 
-
-function drop () {
+function show() {
     bars.addEventListener("click", () => {
-        console.log("false")
-        dropdown.classList.add("show");
-        dropdown.classList.add("droplist")
+        console.log("testing");
+        dropdown.classList.toggle('show');
     });
-
 }
 
-drop()
+document.addEventListener("click", function(event) {
+    if (event.target !== bars) {
+        console.log("testing");
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        }
+    }
+});
+
+show();
