@@ -23,6 +23,10 @@ document.addEventListener("click", function(event) {
         console.log("testing");
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
+            if (rotated === true) {
+                bars.style.transform = "rotate(0deg)";
+                rotated = false;
+            }
         }
     }
 });
