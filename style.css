@@ -111,7 +111,7 @@ nav{
 #bars:hover {
     color: white;
     cursor: pointer;
-    transform:rotate(90deg)
+    /*transform:rotate(90deg)*/
 }
 @media(min-width: 768px) {
     nav{
