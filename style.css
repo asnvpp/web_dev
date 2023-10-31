@@ -32,7 +32,7 @@ nav{
 .info ul{
     justify-content: center;
     align-items: center;
-    margin-top: 124px;    
+    margin-top: 35px;    
 }
 .info{
     color: white;
@@ -41,18 +41,6 @@ nav{
     font-size: 24px;
 
 }
-/*.show{*/
-/*    display: block;*/
-/*    color: white;*/
-/*    margin-left: -135px;*/
-/*    position: absolute;*/
-/*    background-color: #333;*/
-/*    min-width: 160px;*/
-/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-/*    padding: 65px 5px;*/
-/*    z-index: 1;*/
-/*!*}*!*/
-/*.show {display: block;}*/
 .dropdown-content{
     display: none;
     color: white;
@@ -83,14 +71,6 @@ nav{
     float: left;
     overflow: hidden;
 }
-/*.dropdown{*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*}*/
-/* .drop_down:hover .dropdown{
-    display: block;
-} */
-
 
 .dropdown-content a {
     float: none;
@@ -113,23 +93,54 @@ nav{
     cursor: pointer;
     /*transform:rotate(90deg)*/
 }
+.box{
+    margin-top: 35px;
+    padding: 5px 20px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#222;
+}
+.infolist{
+  
+    display: flex;
+    flex-direction: column;
+
+}
+li a,p{
+    /* text-align: center; */
+    text-decoration: none;
+    color:white;
+}
 @media(min-width: 768px) {
     nav{
         display: flex;
+        background-color: #222;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        height: 70px;
     }
-    .main_nav{
+    .navbar{
         display: flex;
-        margin-right: 20px;
-        justify-content: flex-start;
-        flex-direction: row;
-        color: white;
-        align-items: center;
-        list-style-type: none;  
+        background-color: transparent;
+        flex-direction: row-reverse;
+    }
+    .navbar a{
+        background-color: transparent;
+    }
+    /* .dropdown-content{
+        background: none;
+        border-radius: none;
+        display: flex; 
+    } */
+    .dropdown-content{
+        position: relative;
+        display: flex;
+        background-color: #222;
         text-decoration: none;
-        gap: 10px;
+        box-shadow:none;
+        color: white;
     }
     li a{
         color:white;
@@ -139,15 +150,16 @@ nav{
     }
     ul{
         list-style-type: none;
-        margin-left: 20px;
+        margin-left: 20px;  
     }
     #bars{
         display: none;
     }
     .logo{
-        margin-right: 1050px;
+
     }  
     .show{
         display: none;
     }
+
 }
