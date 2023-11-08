@@ -1,8 +1,8 @@
 const bars = document.getElementById("bars");
 const dropdown = document.getElementById("dropdown");
-var rotated= false;
+let rotated = false;
 
-var r = document.querySelector('#bars');
+let r = document.querySelector('#bars');
 console.log(r)
 function show() {
     bars.addEventListener("click", () => {
